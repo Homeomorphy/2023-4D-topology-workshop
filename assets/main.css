@@ -24,6 +24,14 @@
     vertical-align:baseline;
 }
 
+@font-face {
+    font-family: RBNo2Light;
+    src: url(RBNo2LightAlternative-Light.otf) format('opentype');
+    src: url(RBNo2LightAlternative-Light.ttf) format('truetype');
+}
+
+
+
 body{
     background-color: #fafafa;
     background-size: cover;
@@ -78,12 +86,12 @@ th,td{
 
 /* Website Banner */
 .banner {position: relative; font-family:'Copperplate Gothic Light', fantasy}
-.top-left {font-size:3.5em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 110px; position: absolute; padding: 36px 0 0 0; top: 0px;}
+.top-left {font-size:3.5em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 130px; position: absolute; padding: 36px 0 0 0; top: 0px;}
 
 /* Conference Title Logo */
 .title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;font-size:0.45em; font-family:'Bradley Hand', cursive} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;font-size: 0.7em; font-family: 'Gill Sans', serif}
-.title3{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;font-size: 0.65em; font-family: 'Gill Sans', serif}
+.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;font-size: 1em; font-family: 'RBNo2Light', sans-serif}
+.title3{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;font-size: 0.7em; font-family: 'RBNo2Light', sans-serif}
 .year{color: #f2f2f2; font-size:0.5em; font-weight: lighter;font-family: 'Baskerville', serif; text-align: right; position: absolute; bottom: -30px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Navigation Links (Home, Registration, etc) */
