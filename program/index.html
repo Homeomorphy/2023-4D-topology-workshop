@@ -3,7 +3,7 @@
 
 <head>
     <base href="..">
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="assets/Chinese knot.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
@@ -12,56 +12,135 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
-    <title>Program | Conference Template</title>
+    <title>Program</title>
+
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
 </head>
 
 <body>
 
-    <div class="banner">
-        <img src="assets/banner.jpg" alt="Conference Template Banner">
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/NEU1.jpg" >
+    <div class="text">Northeastern University</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/pku.jpeg" >
+    <div class="text">Weiming Lake, Peking University</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/Tsinghua.png" >
+    <div class="text">Tsinghua University</div>
+  </div>
+
+</div>
+<br>
+<script src="scripts.js"></script>
         <div class="top-left">
-            <span class="title1">Conference</span><span class="title2">Template</span> <span class="year">2525</span>
+        <span class="title2">Workshop on Interactions of 3- & 4-dimensional Topology<br> <br><span class="title3">March 10-12, 2023 (Beijing time)</span>
         </div>
-        <div class="bottom-right">
-            June 31, 2525 <br> University Name, and City Maybe
-        </div>
-    </div>
+   
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a title="Conference Home Page" href=".">Home</a>
+                <a class="current" title="Conference Home Page" href=".">Home</a>
             </td>
             <td class="navigation">
                 <a title="Register for the Conference" href="registration">Registration</a>
             </td>
             <td class="navigation">
-                <a class="current" title="Conference Program" href="program">Program</a> 
-            </td>
+                <a title="Conference Program" href="program">Program</a> 
             <td class="navigation">
-                <a title="Directions to the Conference" href="directions">Directions</a>
+                <a title="Participants" href="directions">Participants</a>
             </td>
-            <td class="navigation">
-                <a title="Conference Flyer" href="flyer">Flyer</a>
-            </td>
+            
         </tr>
     </table>
+    
+<p>With the speakers' permission, we posted some of the recordings <a href="https://cloud.tsinghua.edu.cn/d/b977f0d8180a4bf18b64/">here</a>.
 
-    <h2>Conference Program</h2>
-
+   <h2>Friday, March 10, 2023 (Beijing time)</h2>
+<button class="collapsible">Day 1 Schedule</button>
+<div class="content">
     <table>
         <tr>
             <td class="date" rowspan="2">
-                8:30am
+                8:25 am
             </td>
             <td class="title-special">
-                Registration and Coffee &amp; Tea!
+                Opening Remarks &amp; Group Shot!
+            </td>
+        </tr>
+        
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                8:30 am - 9:30 am
+            </td>
+            <td class="title">
+                 Skein lasagna modules
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Ciprian Manolescu (Stanford University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks.
+               Abstract: Skein lasagna modules were introduced by Morrison, Walker and Wedrich 
+               as an extension of Khovanov-Rozansky homology to the setting of a four-manifold 
+               and a link in its boundary. I will describe how to express the skein lasagna module 
+               in terms of a handle decomposition for the four-manifold, and compute some examples. 
+               The talk is based on joint work with Ikshu Neithalath, and on joint work with Kevin 
+               Walker and Paul Wedrich. 
             </td>
         </tr>
     </table>
@@ -69,20 +148,25 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                9:00am
+                9:40 am - 10:40 am
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Lattice cohomology and q-series invariants of plumbed 3-manifolds 
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Slava Krushkal (University of Virginia)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
+                Abstract: I will introduce a combinatorially defined invariant of negative definite 
+                         plumbed 3-manifolds, equipped with a spin-c structure. It unifies and extends two theories with 
+                        rather different origins and structures. One is the theory of lattice cohomology, closely related to 
+                       Heegaard Floer homology. The other invariant of 3-manifolds, with origins in physics, is a certain q-series 
+                       defined by Gukov-Pei-Putrov-Vafa, which is conjectured to recover quantum invariants of 3-manifolds at roots of 
+                       unity. (Joint work with R. Akhmechet and P. Johnson) 
             </td>
         </tr>
     </table>
@@ -90,104 +174,33 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                9:25am
+                10:50 am - 11:50 am
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Slice obstructions from genus bounds in definite 4-manifolds
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Maggie Miller (Stanford University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+                Abstract: Minimum genus bounds for surfaces representing specific homology classes in some 4-manifolds (especially connected sums of \(CP^2\)s) 
+               can be used to show that certain knots in \(S^3\) are not slice. For example, one genus bound due to Bryan in the 1990s can be 
+               used to show that the (2,1)-cable of the figure eight knot is not slice, recovering a result of Dai-Kang-Mallick-Park-Stoffregen from 
+               last summer based on Heegaard Floer (and related) homology. I'll talk about this construction, underlying motivation, and some interesting 
+               open questions that follow. This is joint work with Paolo Aceto, Nickolas A. Castro, JungHwan Park and András Stipsicz.
+
             </td>
         </tr>
     </table>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+   
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                10:15am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                10:40am
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                <!-- Kept for Spacing -->
-            </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                11:00am
-            </td>
-            <td class="title">
-                This is a Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
+   
+  
     <table>
         <tr>
             <td class="date" rowspan="2">
@@ -207,20 +220,27 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                1:30pm
+                1:50 pm - 2:50 pm
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Theta-graph surgery for diffeomorphisms of 4-manifolds 
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Tadayuki Watanabe (Kyoto University)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+                Abstract: We constructed diffeomorphisms of 4-manifolds by surgery along theta-graphs embedded in 4-manifolds. In this talk, 
+                I will talk about our results on some properties of theta-graph surgery: nontriviality up to isotopy, extension to pseudo-isotopy, 
+                fiberwise positive scalar curvature metrics. To obtain some of such properties, we describe theta-graph surgery by families of 
+                framed links of 1- and 2-spheres in 4-manifolds and modify them by an analogue of Kirby calculus. To prove the nontriviality for 
+                some 4-manifolds, we use an analogue of Kontsevich's configuration space integral invariant for a two-loop graph, which is in 
+                a sense a higher dimensional analogue of the Casson invariant, according to a result by G. Kuperberg, D. Thurston, J. Marché, and C. Lescop. <br>
+              <br>
+              Part of this work is joint with Boris Botvinnik (partially based on a suggestion by Peter Teichner).
             </td>
         </tr>
     </table>
@@ -228,31 +248,189 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                1:55pm
+                3:00 pm - 4:00 pm
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                One-domination of 4-manifolds with cyclic fundamental groups
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Yang Su (Chinese Academy of Sciences)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+             Abstract: Based on the topological classifications of 4-manifolds with cyclic fundamental groups, we study the existence and finiteness of degree one maps between these manifolds. This is a joint work with Shicheng Wang and Zhongzi Wang. 
             </td>
         </tr>
     </table>
 
+<table>
+        <tr>
+            <td class="date" rowspan="2">
+                4:00 pm - 4:20 pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+    
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                4:20 pm - 5:20 pm
+            </td>
+            <td class="title">
+                Floer homology and non-fibered knot detection
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Steven Sivek (Imperial College)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: Knot Floer homology and Khovanov homology are known to detect a small handful of knots, including the unknot, the trefoils, the figure eight, and the cinquefoil. In each case except that of the unknot, the fiberedness of the knots in question plays a crucial role in the proofs.  In this talk, I'll discuss recent work with John Baldwin in which we show for the first time that both invariants can also detect non-fibered knots, including \(5_2\), and that HOMFLY homology detects infinitely many knots. The key input is a classification of genus-1 knots which are "nearly fibered" from the perspective of knot Floer homology.
+            </td>
+        </tr>
+    </table>
+
+   
+
+    <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">
+                5:30 pm - 6:30 pm
+            </td>
+            <td class="title">
+                Lecture 1
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Mark Powell (University of Glasgow)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+             Abstract: Freedman's disc embedding theorem allows us to perform the
+Whitney trick in dimension 4, under special circumstances. It underpins
+all of topological 4-manifold theory. In the first lecture, I will
+explain an outline of the proof. 
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<h2>Saturday, March 11, 2023 (Beijing time)</h2>
+<button class="collapsible">Day 2 Schedule</button>
+<div class="content">
+
+        
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                8:30 am - 9:30 am
+            </td>
+            <td class="title">
+                Groups of automorphisms of hyperbolic manifolds
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+               Ryan Budney (University of Victoria)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+               Abstract: Given a compact hyperbolic manifold of dimension \(n\geq 2\) its isometry group is known to be finite.  
+              In dimensions \(n\geq 3\), Mostow Rigidity tells us the space of homotopy self-equivalences of the 
+              manifold has the isometry group as a deformation-retract.  In dimension 3, due to work of Hatcher, 
+              Waldhausen and Gabai, we know the group of homeomorphisms, PL-automorphisms and diffeomorphisms
+              also has the isometry group as a deformation-retract.  In dimensions \(\geq 11\), Farrell and Jones used the 
+              machinery of Higher Simple Homotopy Theory (K-theory, pseudoisotopy, etc) to show that smooth, PL and 
+               topological automorphism groups of compact hyperbolic manifolds do not have the homotopy-type of the 
+               isometry group, moreover they do not have the homotopy-type of finite CW-complexes.  We extend these
+                results to dimension \(n\geq 4\) by avoiding the use of Higher Simple Homotopy Theory, and constructing diffeomorphisms 
+               explicitly using "barbells". 
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                9:40 am - 10:40 am
+            </td>
+            <td class="title">
+                An atomic approach to Wall-type stabilization problems
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Kyle Hayden (Rutgers University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: Wall-type stabilization problems concern the collapse of exotic 4-dimensional phenomena under stabilization operations (such as taking connected sums with
+                           \(S^2\times S^2\). 
+                        I will describe an elementary approach to producing exotic 4-manifolds and knotted surfaces that are candidates to remain exotic after stabilization. As a proof of concept, I will use this to present examples of 
+                         exotically knotted surfaces in the 4-ball that remain exotic after (internal) stabilization, detected by the cobordism maps on universal Khovanov homology.
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                10:50 am - 11:50 am
+            </td>
+            <td class="title">
+                Instanton Floer homology and Heegaard diagrams
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Zhenkun Li (Stanford University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: Instanton Floer homology was introduced by Floer in 1980s and it has become a power invariant for three manifolds and knots since then. 
+               It has lead to many milestone results, such as the approval of Property P conjecture. Heegaard diagrams, on the other hand, is a 
+                combinatorial method to describe and study 3-manifolds. In principle, a Heegaard diagram determines a 3-manifold and hence determines 
+               its instanton Floer homology as well. However, no explicit relations between Heegaard diagrams and instanton 
+               Floer homology were known until a recent progress by my collaborators and I. In this talk, for a 3-manifold \(Y\), I will 
+         present how to extract some information about the instanton Floer homology of \(Y\) from Heegaard diagrams of \(Y\). I will also discuss on
+         some applications and possible future directions. This is a joint work with Baldwin and Ye.
+
+            </td>
+        </tr>
+    </table>
+
+   
+
+   
+  
     <table>
         <tr>
             <td class="date" rowspan="2">
-                2:50pm
+                Noon
             </td>
             <td class="title-special">
-                Coffee &amp; Tea Break
+                Lunch
             </td>
         </tr>
         <tr>
@@ -265,20 +443,147 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                3:10pm
+                1:50 pm - 2:50 pm
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                \(gl(1|1)\)-Alexander polynomial for 3-manifolds
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Yuanyuan Bao (University of Tokyo)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+                Abstract: The Alexander polynomial introduced by Viro based on the representations of \(U_q(gl(1|1))\) has many interesting connections 
+               with Heegaard Floer homology. For instance, A. Manion showed that the decategorification of Ozsvath and Szabo's bordered theory 
+              coincides with the functor given by Viro. From a different viewpoint, Zhongtao Wu and I studied the Alexander polynomial for MOY graphs 
+             (framed trivalent graph with coloring), which is in fact the Euler characteristic of the Heegaard Floer homology of graphs. 
+             We later proved that this polynomial is equivalent to Viro's \(U_q(gl(1|1))\)-polynomial. In this talk, we show how to construct a 
+             3-manifold invariant from Viro's \(U_q(gl(1|1))\)-polynomial, by following the method proposed by Castantino, Geer and Patureau-Mirand. 
+             This result is joint work with Noboru Ito.
+             </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                3:00 pm - 4:00 pm
+            </td>
+            <td class="title">
+                Spaces of embeddings of 3-manifolds in 4-manifolds
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Daniel Ruberman (Brandeis University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+             Abstract: There are many interesting obstructions to the existence of smooth embeddings of a surface or 
+              3-manifold in a given 4-manifold, and examples of embeddings that are not smoothly isotopic. Often the topological 
+             version of existence and uniqueness questions have different answers from the smooth case. In joint work with 
+             Dave Auckly, we compare the spaces of smooth and topological embeddings. We show that for many 3-manifolds, 
+             there is a large  kernel of the map on the homology and homotopy groups of the space of smooth embeddings to the corresponding space of topological embeddings.
+            </td>
+        </tr>
+    </table>
+
+<table>
+        <tr>
+            <td class="date" rowspan="2">
+                4:00 pm - 4:20 pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+    
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                4:20 pm - 5:20 pm
+            </td>
+            <td class="title">
+                The (2,1)-cable of the figure-eight knot is not smoothly slice
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Sungkyung Kang (IBS Center for Geometry and Physics)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: We prove that the (2,1)-cable of the figure-eight knot is not smoothly slice. This answers a question of Kawauchi, posed originally in 1980.
+            </td>
+        </tr>
+    </table>
+
+   
+
+    <table class="plenary">
+        <tr>
+            <td class="date" rowspan="3">
+                5:30 pm - 6:30 pm
+            </td>
+            <td class="title">
+                Lecture 2
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Mark Powell (University of Glasgow)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+             Abstract: Kreck's modified surgery theory is a powerful method for
+understanding manifolds and their symmetries.  In this lecture I will
+introduce this method, and explain how to use it to classify 4-manifolds
+up to stable diffeomorphism, giving detailed examples. I will finish by
+comparing stable diffeomorphism with a range of popular equivalence
+relations on 4-manifolds, again giving many examples.
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<h2>Sunday, March 12, 2023 (Beijing time)</h2>
+<button class="collapsible">Day 3 Schedule</button>
+<div class="content">
+
+        
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                8:30 am - 9:30 am
+            </td>
+            <td class="title">
+                Floer homology and right-veering surface diffeomorphisms
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+               John Baldwin (Boston College)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+               Abstract: A diffeomorphism of a surface with boundary is said to be right-veering if it sends every properly embedded arc in the surface to the right near the boundary. This dynamical notion is intimately related with contact geometry, as shown by Honda-Kazez-Matic. In this talk I'll explain how knot Floer homology can be used to completely detect whether a surface diffeomorphism is right-veering. This gives a purely Floer-theoretic characterization of tight contact structures, and has applications to Dehn surgery and taut foliations. Our proof uses a relationship between Heegaard Floer homology and the periodic Floer homology of surface diffeomorphisms. This is based on joint work with Yi Ni and Steven Sivek.
             </td>
         </tr>
     </table>
@@ -286,49 +591,187 @@
     <table id="PUTSPEAKERNAMEHERE">
         <tr>
             <td class="date" rowspan="3">
-                3:35pm
+                9:40 am - 10:40 am
             </td>
             <td class="title">
-                Interesting Title of a Talk 
+                Geometry of positive symplectic rational surfaces
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Speaker Name (University)
+                Tian-jun Li (Unversity of Minnesota)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+                Abstract: A symplectic rational surface is called positive if the pairing between the two degree 2 cohomological invariants, the symplectic class and the first Chern class, is positive. A symplectic rational surface with Euler number up to 12 is positive and a symplectic toric surface is positive. 
+              We will discuss some recent results on the geometry of such surfaces. This is based on  joint works with Jun Li, Weiwei Wu, and  with Jie Min and Shengzhen Ning. 
             </td>
         </tr>
     </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                10:50 am - 11:50 am
+            </td>
+            <td class="title">
+                 Introduction to Ricci Flow
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Bennett Chow (University of California, San Diego)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: In this talk I will give an introduction to Ricci flow for non-specialists. A lengthier introduction will be given via Tencent in <a href="http://tianyuan.xmu.edu.cn/cn/MiniCourses/2077.html" style="text-decoration: none">Short course on "A Retrospective Look at Ricci Flow".</a>
+            </td>
+        </tr>
+    </table>
+
+   
+
+   
+  
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                Noon
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                1:50 pm - 2:50 pm
+            </td>
+            <td class="title">
+                Reverse Lagrangian surgery on fillings
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Yu Pan (Tianjin University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: For an immersed filling of a topological knot, one can do surgery to resolve a double point with the price of 
+                  increasing surface genus by 1. In the Lagrangian analog, one can do Lagrangian surgery on immersed Lagrangian fillings to treat a 
+                  double point by a genus. In this talk, we will explore the possibility of reversing the Lagrangian surgery, i.e., compressing a genus into a double point. It turns out that not all Lagrangian surgery are reversible. 
+             </td>
+        </tr>
+    </table>
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                3:00 pm - 4:00 pm
+            </td>
+            <td class="title">
+                A new approach to light bulb tricks
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Danica Kosanović (Swiss Federal Institute of Technology in Zürich)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+             Abstract: I will explain a new approach to geometric dual spheres in 4-manifolds, which can not only classify isotopy classes of disks or spheres which have such a dual, but also leads to some new insights into mapping class groups of 4-manifolds. This is joint work with Peter Teichner. 
+            </td>
+        </tr>
+    </table>
+<table>
+        <tr>
+            <td class="date" rowspan="2">
+                4:00 pm - 4:20 pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </table>
+    
+
+    <table id="PUTSPEAKERNAMEHERE">
+        <tr>
+            <td class="date" rowspan="3">
+                4:20 pm - 5:20 pm
+            </td>
+            <td class="title">
+                On spaces of smooth structures on 4-manifolds
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Jianfeng Lin (Tsinghua University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Abstract: Given a manifold \(X\), the space of smooth structure on \(X\) (denoted by \(Sm(X)\)) is defined to be the homotopy quotient of the  homeomorphism group by the action of diffeomorphism group. This space measures the difference between the topology of these two groups. In particular, \(Sm(X)\) is always contractible when \(X\) is 3-dimensional or less. In this talk, I will sketch a proof that \(Sm(X)\) has a nontrivial rational homotopy group when \(X\) is any compact orientable 4-manifold \(X\) (with or without boundary) or is the 4-dimensional Euclidean space. This is a joint work with Yi Xie. 
+            </td>
+        </tr>
+    </table>
+
+    
+
+      
 
     <table class="plenary">
         <tr>
             <td class="date" rowspan="3">
-                4:00pm
+                5:30 pm - 6:30 pm
             </td>
             <td class="title">
-                This is Another Plenary Talk!
+                Lecture 3
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Plenary Speaker
+                Mark Powell (University of Glasgow)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
+             Abstract: I will explain how to use modified surgery together with the
+disc embedding theorem to obtain homeomorphism classifications. As an
+extended example, I will outline the modified surgery proof of the
+classification of 1-connected closed 4-manifolds.  I will also give an
+application to isotopy of embedded surfaces. 
             </td>
         </tr>
     </table>
+</div>
+
+<script src="script.js"></script>
+
 
     <footer>
-        &copy; Conference Organizers
-        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+        &copy; Workshop Organizers
+        &nbsp;|&nbsp; Template Designed by <a href="https://github.com/mikepierce">Mike Pierce</a>
     </footer>
+
+
+
 
 </body>
 </html>
